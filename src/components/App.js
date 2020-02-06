@@ -1,7 +1,10 @@
 (() => ({
   name: 'App',
   type: 'ROW',
-  allowedTypes: ['NAVBAR'],
+  allowedTypes: [
+    'NAVBAR',
+    'ACCORDION'
+  ],
   orientation: 'HORIZONTAL',
   jsx: (() => {
     const { App, View, Page } = window.Framework7ReactComponents;
