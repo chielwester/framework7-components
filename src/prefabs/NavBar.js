@@ -5,7 +5,14 @@
   structure: [
     {
       name: 'NavBar',
-      options: [],
+      options: [
+        {
+          key: 'title',
+          value: ['Toolbar title'],
+          label: 'Title',
+          type: 'VARIABLE'
+        }
+      ],
       descendants: [],
     },
   ],
