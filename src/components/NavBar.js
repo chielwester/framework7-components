@@ -26,7 +26,9 @@
     return (env === 'dev' ? <div className={classes.root}>{NavBar}</div> : NavBar);
   })(),
   styles: B => t => ({
-    root: {},
+    root: {
+      height: '100%'
+    },
     app: {
       position: B.env === 'dev' ? 'static!important' : 'relative'
     },
