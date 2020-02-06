@@ -1,0 +1,16 @@
+{
+  "name": "bundle",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "dayjs": "^1.8.17",
+    "framework7": "^5.4.0",
+    "framework7-react": "^5.4.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
