@@ -1,6 +1,6 @@
 (() => ({
   name: 'Card',
-  type: 'CONTENT',
+  type: 'CARD',
   allowedTypes: [],
   orientation: 'HORIZONTAL',
   jsx: (() => {
