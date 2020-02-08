@@ -5,13 +5,13 @@
   orientation: 'HORIZONTAL',
   jsx: (() => {
     const { Card } = window.Framework7ReactComponents;
-    const { env } = B;
+    const { env, useText } = B;
 
     const F7Card = (
       <Card
         expandable={options.expandable ? options.expandable : undefined}
         outline={options.outline ? options.outline : undefined}
-        title={options.title ? options.title : undefined}
+        title={env === 'dev' ? options.title.join(' ') : useText(options.title)}
         content={options.content}
         footer={options.footer ? options.footer : undefined}
       >

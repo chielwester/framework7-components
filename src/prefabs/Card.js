@@ -15,8 +15,8 @@
         {
           key: 'title',
           label: 'Title',
-          value: 'Title',
-          type: 'TEXT',
+          value: ['Title'],
+          type: 'VARIABLE',
         },
         {
           key: 'footer',
