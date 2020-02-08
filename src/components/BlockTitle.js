@@ -1,19 +1,18 @@
 (() => ({
   name: 'BlockTitle',
-  type: 'BLOCKTITLE',
-  allowedTypes: [],
+  type: 'BLOCK_TITLE',
+  allowedTypes: ['ACCORDION_ITEM'],
   orientation: 'HORIZONTAL',
   jsx: (() => {
-    const { Card } = window.Framework7ReactComponents;
+    const { BlockTitle } = window.Framework7ReactComponents;
     const { env } = B;
 
-    const F7Card = (
-      <Card content="This is a simple card with plain text, but cards can also contain their own header, footer, list view, image, or any other element."></Card>
-    );
+    const F7Accordion = <BlockTitle>Text</BlockTitle>;
+
     return env === 'dev' ? (
-      <div className={classes.root}>{F7Card}</div>
+      <div className={classes.root}>{F7Accordion}</div>
     ) : (
-      F7Card
+      F7Accordion
     );
   })(),
   styles: () => () => ({
